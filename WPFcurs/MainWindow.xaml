@@ -1,0 +1,58 @@
+﻿<Window x:Class="WPFcurs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFcurs"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="461" Width="1800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.15*"/> <!--Column items-->
+            <ColumnDefinition Width="0.15*"/> <!--Column week days-->
+            <ColumnDefinition/> <!--Column schedule-->
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Vertical" Grid.Column="2">
+            <Label Height="91"  FontSize="35" 
+                   VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Content="Расписание занятий " 
+                   FontFamily="Bahnschrift SemiBold SemiCondensed" Width="1385" />
+                    </StackPanel>
+        
+        <StackPanel Orientation="Vertical" Grid.Column="1" >
+            <Label Height="46"  FontSize="35" 
+                   HorizontalAlignment="Left" Content="Выбор" 
+                   FontFamily="Bahnschrift SemiBold SemiCondensed" />
+            <Label Height="45"  FontSize="35" 
+                   HorizontalAlignment="Left" Content="предмета" 
+                   FontFamily="Bahnschrift SemiBold SemiCondensed" />
+            
+                <Button Height="40" Content="Алгебра" FontSize="25"/>
+                <Button Height="40"  Content="Астрономия" FontSize="25"/>
+                <Button Height="40" Content="Гастрономия" FontSize="25"/>
+                <Button Height="40" Content="Геометрия" FontSize="25"/>
+                <Button Height="40" Content="Информатика" FontSize="25"/>
+                <Button Height="40" Content="Физика" FontSize="25"/>
+                <Button Height="40" Content="Физ-ра" FontSize="25"/>
+                <Button Height="40" Content="Философия" FontSize="25"/>
+                <Button Height="34" Content="Общее" FontSize="25"/>
+            
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0" >
+            <Label Height="46"  FontSize="35" 
+                   HorizontalAlignment="Left" Content="Выбор" 
+                   FontFamily="Bahnschrift SemiBold SemiCondensed" />
+            <Label Height="45"  FontSize="35" 
+                   HorizontalAlignment="Left" Content="дня недели" 
+                   FontFamily="Bahnschrift SemiBold SemiCondensed" />
+            <Button Height="59.375" Content="Понедельник" FontSize="25"/>
+            <Button Height="59.375" Content="Вторник" FontSize="25"/>
+            <Button Height="59.375" Content="Среда" FontSize="25"/>
+            <Button Height="59.375" Content="Четрверг" FontSize="25"/>
+            <Button Height="59.375" Content="Пятница" FontSize="25"/>
+            <Button Height="59.375" Content="Суббота" FontSize="25"/>
+        </StackPanel>
+    </Grid>
+</Window>
